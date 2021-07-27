@@ -5,10 +5,8 @@ name: CI
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,11 +26,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Install Package
         run: npm i
-      
+
       - name: Unit Testing
         run: npm run test:unit
-        
+
       - name: Build the App
         run: npm run build
-        
-        
