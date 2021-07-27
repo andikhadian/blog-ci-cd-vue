@@ -29,3 +29,6 @@ jobs:
 
       - name: Unit Testing
         run: npm run test:unit
+        
+      - name: Build the App
+        run: npm run build
