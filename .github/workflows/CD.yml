@@ -24,13 +24,10 @@ jobs:
       - name: Deploy using SSH
         uses: fifsky/ssh-action@master
         with:
-          command: |
-            cd /tmp
-            ls -a
           host: ${{ secrets.HOST_MY_SERVER }}
           user: root
           key: ${{ secrets.PRIVATE_KEY_MY_SERVER}}
-          script: |
+          command: |
             cd /var/www/workshop-blog.andikhadian.com
             git pull origin main
             git status
