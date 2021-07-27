@@ -31,6 +31,4 @@ jobs:
             cd /var/www/workshop-blog.andikhadian.com
             git pull origin main
             git status
-            npm i
-            npm run build
 
