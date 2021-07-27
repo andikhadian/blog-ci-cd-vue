@@ -7,7 +7,7 @@
         <h2
           class="leading-loose text-3xl mb-8 font-bold text-green-500 border-b"
         >
-          The Workshop Blog
+          The Workshop Blog New
         </h2>
         <router-view :posts="posts"></router-view>
       </div>
