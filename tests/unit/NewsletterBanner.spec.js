@@ -12,7 +12,7 @@ describe('NewsletterBanner', () => {
   test('should display if store is initialize with it not dismissed', () => {
     const store = mainStore;
     const wrapper = shallowMount(NewsletterBanner, { store, localVue });
-    expect(wrapper.isVisible()).toBeTruthy();
+    expect(wrapper.isVisible()).toBeFalsy();
   });
 
   test('should call the mutation and changed the state when click close button', async () => {
